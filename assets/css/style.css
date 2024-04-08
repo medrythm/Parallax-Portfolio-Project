@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 150vh;
+    overflow-x: hidden;
+    background: #0d2385;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header .logo {
+    color: #fff;
+    mix-blend-mode: darken;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover {
+    background: #fff;
+    color: #0f0e0e;
+}
+/* Header Ends */
+
+/* Section */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1b1a20, transparent);
+    z-index: 100;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#sun {
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 65px;
+    border-radius: 100px;
+    background: #2f3794;
+    color: #fff;
+    font-size: 1.5em;
+    z-index: 100;
+    transform: translate(10px);
+}
+
+b {
+    color: #5b85c4;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+  
+.skill-header {
+    margin-bottom: 1rem;
+}
+  
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+  
+.icon {
+    width: 20.875rem;
+    height: 10.25rem;
+    box-shadow: 0;
+}
+
+#text {
+    position: relative;
+    /*right: -350px;*/
+    color: #fff;
+    white-space: nowrap;
+    font-size: 8vw;
+    z-index: 9;
+}
+
+.sec {
+    position: relative;
+    padding: 50px;
+    background: #1b1a20;
+}
+
+.sec h1 {
+    padding-left: 40%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 3.5em;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.sec p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* Skills Section Ends */
+
+/* Contacts section */
+
+.contact {
+    margin-top: 1rem;
+}
+    
+.contact h1 {
+    text-align: center;
+}
+    
+.contact-form-container {
+    max-width: 40.75rem;
+    padding: 0.9rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 100px rgb(0, 11, 170);
+}
+    
+.contact-form-container label {
+    line-height: 2.5em;
+    font-weight: var(--bold-font);
+    color: rgb(227, 227, 240);
+}
+    
+.contact-form-container textarea {
+    min-height: 0.25rem;
+    font-size: 14px;
+}
+    
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px outset rgb(0, 4, 8);
+    font-size: 0.9rem;
+    outline: none;
+}
+    
+.input-field::placeholder {
+    padding: 0.05rem;
+    color: var(--primary-color);
+}
+    
+.btn {
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+    color: #fff;
+    background-color: #1e808086;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+    
+.submit-btn:hover {
+    background-color: rgb(196, 190, 190);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+  /* Contacts section ends */
+
+/* Footer */
+footer {
+    background-color: #1b1a20;
+    text-decoration: none;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.footer-icon img {
+    mix-blend-mode: multiply;
+    height: 10%;
+    width: 10%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Footer Ends*/

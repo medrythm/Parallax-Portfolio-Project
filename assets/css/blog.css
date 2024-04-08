@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+* {
+    margin: 5px;
+    padding: 5px;
+    color: #080808;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #3d4042;
+    color: #ffffff;
+    font-size: 1em;
+    z-index: 100;
+    transform: translate(10px);
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+    padding: 20px;
+}
+  
+h2 {
+    margin: 0;
+}
+  
+h1 {
+    margin: 0;
+    color: #080808;
+    font-weight: 800px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.blog {
+    margin-top: 1rem;
+}
+    
+.post-form-container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgb(0, 0, 5);
+}
+    
+.post-form-container label {
+    line-height: 2.5rem;
+    font-weight: var(--bold-font);
+    color: rgb(0, 0, 0);
+}
+    
+.post-form-container textarea {
+    min-height: 0.25rem;
+    font-size: 14px;
+}
+    
+.post-form-container .input-field {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset rgb(193, 187, 243);
+    font-size: 1rem;
+    outline: none;
+}
+    
+.input-field::placeholder {
+    padding: 0.05rem;
+    color: var(--primary-color);
+}
+    
+.post-btn:hover {
+    background-color: rgb(39, 37, 37);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.post-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #1b2b92;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+.delete-btn {
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.footer-icon img {
+    height: 10%;
+    width: 10%;
+}
+
+h3 {
+    color: #080808;
+    text-decoration: none;
+}
+
+a {
+    color: #050507;
+    text-decoration: none;
+}
+/* Footer Ends*/

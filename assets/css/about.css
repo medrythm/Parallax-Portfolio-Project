@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+ 
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 80, 126);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  height: 50vh;
+  border-radius: 15px;
+  box-shadow: 0 10px 100px rgb(0, 224, 205);
+}
+
+h1 {
+  width: 100%;
+  color: rgb(231, 236, 240);
+  text-transform: uppercase;
+  height: 10vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+p {
+  color: rgb(231, 236, 240);
+  padding: 30px;
+}
+
+.footer-icon {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/blog.css">
+  <link rel="icon" type="image/png" href="./icons/favicon.ico">
+  <title>Blog Post</title>
+</head>
+<body>
+  <header>
+  <a href="http://127.0.0.1:5500/index.html#" class="logo">Mfumu Mabunda | Blog</a>
+  </header>
+  
+  <div class="img">
+  <img src="./images/it.gif"
+  class="img"
+  alt="img"/>
+  </div>
+  <h1>Recent Posts</h1>
+  <div class="post">
+    <h2>What happens when you type google.com in your browser and press Enter?</h2>
+    <p>This question is a classic and still widely used interview question for many types of software engineering position. It is used to assess a candidate’s general knowledge of how the web stack works on top of the internet...</p>
+    <a href="https://medium.com/@mabunda.wealth/0x11-what-happens-when-you-type-google-com-in-your-browser-and-press-enter-9c35a243a301">Read more</a>
+  </div>
+
+  <div class="post">
+    <h2>Postmortem.</h2>
+    <p>On May 10, 2023, our web server experienced an outage that lasted approximately 3 hours. The cause of the outage was a failure in the server’s power supply unit...</p>
+    <a href="https://medium.com/@mabunda.wealth/0x19-postmortem-9e50f69b5d00">Read more</a>
+  </div>
+
+  <div class="post">
+    <h2>Personal Web-Portfolio.</h2>
+    <p>I propose the development of a web portfolio to showcase my skills and experience. This portfolio will serve as an online representation of my capabilities as a Front-End Engineer and will be accessible to potential clients and collaborators...</p>
+    <a href="https://medium.com/@mabunda.wealth/personal-web-portfolio-dfcc0dc560a3">Read more</a>
+  </div>
+
+  <div class="post">
+    <h2>Personal Web-Portfolio | MVP Specification</h2>
+    <p>List of API routes to be created for my web client to communicate with my web server:
+      GET/api/projects - This route retrieves all portfolio projects from the server and returns them to the client as an array of JSON objects. The client can use this route to display a list of all projects.
+      ...</p>
+    <a href="https://docs.google.com/document/d/1mJmGtnnvWuOTv7sq6fXaSqH7PBQ2dgP_svjUx9HeZ9E">Read more</a>
+  </div>
+
+  <div class="post">
+    <h2>Build your portfolio project | Making Progress (week 1)</h2>
+    <p>Performance Optimization: Parallax websites often rely on large images, animations, and complex scrolling effects, which can significantly impact performance. Ensuring a smooth and responsive experience across different devices and browsers while maintaining optimal loading times can be a challenge...</p>
+    <a href="https://docs.google.com/document/d/1chB_T7nkbv1yL4qBLmJ6ZRW8lkXGiuk9DbACSSLDlcA/edit#">Read more</a>
+  </div>
+
+  <div class="post">
+    <h2>Build your portfolio project | MVP Complete (week 2)</h2>
+    <p>Evaluating the visual aesthetics, colour scheme, typography, and layout. The design aligns with the intended theme and purpose of the website while providing an engaging and user-friendly experience...</p>
+    <a href="https://medium.com/@mabunda.wealth/personal-web-portfolio-dfcc0dc560a3">Read more</a>
+  </div>
+  <!--<div class="new-post">
+    <h2>Add a New Blog Post</h2>
+    <textarea id="blog-content" placeholder="Write something..."></textarea>
+    <button onclick="addPost()">Post</button>
+  </div>-->
+
+  <h1>Add a New Blog Post</h1>
+
+  <section class="blog" id="blog">
+    <div class="post-form-container">
+      <div class="post-form">
+        <form action="#" method="POST">
+          <div class="form-control">
+            <!--<label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message"></label>-->
+            <textarea
+              id="message"
+              cols="80"
+              rows="18"
+              placeholder="Write something..."
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="post"
+            value="Post"
+            id="post-btn"
+            class="post-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+  <div class="footer-icon">
+    <img src="./images/apple-touch-icon.png"
+    class="footer-icon"
+    alt="footer"/>
+  </div>
+    <p class="copy">&copy; Open Source 2023</p>
+    <p class="copy">
+    <a href="https://github.com/OptimisticUnderdog" target="_blank">Mfumu Wealth Mabunda</a>
+    </p>
+  </footer>
+
+  <script>
+    function addPost() {
+      var content = document.getElementById("blog-content").value;
+      if (content !== "") {
+        var postDiv = document.createElement("div");
+        var heading = document.createElement("h2");
+        heading.textContent = "New Blog Post";
+        var paragraph = document.createElement("p");
+        paragraph.textContent = content;
+
+        var deleteBtn = document.createElement("span");
+        deleteBtn.className = "delete-btn";
+        deleteBtn.textContent = "Delete";
+        deleteBtn.onclick = function() {
+          deletePost(this);
+        }
+
+        paragraph.appendChild(deleteBtn);
+
+        postDiv.appendChild(heading);
+        postDiv.appendChild(paragraph);
+
+        document.body.insertBefore(postDiv, document.getElementsByClassName("new-post")[0]);
+
+        document.getElementById("blog-content").value = "";
+      }
+    }
+
+    function deletePost(element) {
+      var postDiv = element.parentNode.parentNode;
+      postDiv.parentNode.removeChild(postDiv);
+    }
+  </script>
+</body>
+</html>

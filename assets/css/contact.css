@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  padding-top: 2%;
+}
+ 
+header .logo {
+  padding: 5%;
+  padding-top: 5%;
+  color: #161515;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Contacts section */
+.contact {
+  margin-top: 5rem;
+}
+  
+.contact h2 {
+  padding-bottom: 2%;
+  font-weight: 780;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: blue;
+}
+  
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgb(1, 0, 82);
+}
+  
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: rgb(6, 6, 8);
+}
+  
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+  
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset rgb(193, 187, 243);
+  font-size: 0.875rem;
+  outline: none;
+}
+  
+.input-field::placeholder {
+  padding: 0.05rem;
+  color: var(--primary-color);
+}
+  
+.btn {
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+  margin: auto;
+  color: #fff;
+  background-color: #362194;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+  
+.submit-btn:hover {
+  background-color: silver;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+/* Contacts section ends */
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+.footer-icon img {
+  height: 10%;
+  width: 10%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Footer Ends*/
